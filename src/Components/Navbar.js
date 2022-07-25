@@ -19,6 +19,7 @@ const Navbar = () => {
 		handleClick,
 		screenSize,
 		setScreenSize,
+		currentColor,
 	} = useStateContext();
 
 	// --> Getting device width on screen load
@@ -62,14 +63,14 @@ const Navbar = () => {
 				customFunc={() =>
 					setActiveMenu((prevActiveMenu) => !prevActiveMenu)
 				}
-				color="blue"
+				color={currentColor}
 				icon={<AiOutlineMenu />}
 			/>
 			<div className="flex">
 				<NabButton
 					title="Cart"
 					customFunc={() => handleClick("cart")}
-					color="blue"
+					color={currentColor}
 					icon={<FiShoppingCart />}
 				/>
 				<NabButton
@@ -78,7 +79,7 @@ const Navbar = () => {
 					customFunc={() => {
 						handleClick("chat");
 					}}
-					color="blue"
+					color={currentColor}
 					icon={<BsChatLeft />}
 				/>
 
@@ -88,7 +89,7 @@ const Navbar = () => {
 					customFunc={() => {
 						handleClick("notification");
 					}}
-					color="blue"
+					color={currentColor}
 					icon={<RiNotification3Line />}
 				/>
 
@@ -103,7 +104,9 @@ const Navbar = () => {
 							className="rounded-full w-8 h-8"
 						/>
 						<p>
-							<span className="text-gray-400 text-14">Hi,</span>{" "}
+							<span className="text-gray-400 text-14">
+								Hi,
+							</span>{" "}
 							<span className="text-gray-400 font-bold ml-1 text-14">
 								Michael
 							</span>
