@@ -153,6 +153,7 @@ function App() {
 						</div>
 					</div>
 				</div>
+				<Footer />
 			</div>
 		</div>
 	);
