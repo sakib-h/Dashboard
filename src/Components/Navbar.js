@@ -16,6 +16,7 @@ const Navbar = () => {
 		setActiveMenu,
 		isClicked,
 		setIsClicked,
+		initialState,
 		handleClick,
 		screenSize,
 		setScreenSize,
@@ -96,7 +97,9 @@ const Navbar = () => {
 				<Tooltip title="Profile" arrow>
 					<div
 						className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg"
-						onClick={() => {}}
+						onClick={() => {
+							handleClick("userProfile");
+						}}
 					>
 						<img
 							src={avatar}

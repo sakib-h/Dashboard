@@ -37,7 +37,7 @@ function App() {
 		<div className={currentMode === "Dark" ? "dark" : ""}>
 			<div className="App">
 				<div className="flex relative dark:bg-main-dark-bg">
-					<div className="fixed right-4 bottom-4 z-1000">
+					<div className="fixed right-4 bottom-4">
 						<Tooltip title="Setting" arrow>
 							<button
 								type="button"

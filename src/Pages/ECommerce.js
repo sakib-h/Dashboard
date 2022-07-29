@@ -94,7 +94,7 @@ const ECommerce = () => {
 							</p>
 						</div>
 					</div>
-					<div className="mt-10 gap-10 flex flex-wrap justify-center">
+					<div className="mt-10 gap-10 flex flex-wrap justify-center  ">
 						<div className="border-r-1 border-color m-4 pr-10">
 							<div>
 								<p>

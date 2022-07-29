@@ -35,6 +35,7 @@ export const ContextProvider = ({ children }) => {
 	};
 
 	const value = {
+		initialState,
 		activeMenu,
 		setActiveMenu,
 		isClicked,
